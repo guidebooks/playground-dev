@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
+import { notebookVFS } from '@kui-shell/plugin-core-support'
+
 /**
  * Register the welcome notebook
  *
  */
 export default async () => {
-  const { notebookVFS } = await import('@kui-shell/plugin-core-support')
   notebookVFS.cp(
     undefined,
     [
@@ -27,7 +28,7 @@ export default async () => {
       'plugin://plugin-client-common/notebooks/expandable-section.md',
       'plugin://plugin-client-common/notebooks/hints.md',
       'plugin://plugin-client-common/notebooks/tabs.md',
-      'plugin://plugin-client-offline/notebooks/playground.md'
+      'plugin://client/notebooks/playground.md'
     ],
     '/kui'
   )

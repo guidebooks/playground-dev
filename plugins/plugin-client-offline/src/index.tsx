@@ -36,7 +36,9 @@ export default function renderMain(props: KuiProps) {
       noHelp
       productName={productName}
       lightweightTables
+      loadingDone={() => <React.Fragment/>}
       {...props}
+      quietExecCommand={false}
       commandLine={
         props.commandLine || [
           'commentary',
