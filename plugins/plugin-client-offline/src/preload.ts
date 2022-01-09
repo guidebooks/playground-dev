@@ -14,25 +14,21 @@
  * limitations under the License.
  */
 
-import { Capabilities } from '@kui-shell/core'
-
 /**
  * Register the welcome notebook
  *
  */
 export default async () => {
-  if (!Capabilities.isHeadless() || Capabilities.inProxy()) {
-    const { notebookVFS } = await import('@kui-shell/plugin-core-support')
-    notebookVFS.cp(
-      undefined,
-      [
-        'plugin://plugin-client-common/notebooks/code-blocks.md',
-        'plugin://plugin-client-common/notebooks/expandable-section.md',
-        'plugin://plugin-client-common/notebooks/hints.md',
-        'plugin://plugin-client-common/notebooks/tabs.md',
-        'plugin://plugin-client-common/notebooks/playground.md'
-      ],
-      '/kui'
-    )
-  }
+  const { notebookVFS } = await import('@kui-shell/plugin-core-support')
+  notebookVFS.cp(
+    undefined,
+    [
+      'plugin://plugin-client-common/notebooks/code-blocks.md',
+      'plugin://plugin-client-common/notebooks/expandable-section.md',
+      'plugin://plugin-client-common/notebooks/hints.md',
+      'plugin://plugin-client-common/notebooks/tabs.md',
+      'plugin://plugin-client-offline/notebooks/playground.md'
+    ],
+    '/kui'
+  )
 }
