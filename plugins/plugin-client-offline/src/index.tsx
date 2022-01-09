@@ -36,7 +36,7 @@ export default function renderMain(props: KuiProps) {
       noHelp
       productName={productName}
       lightweightTables
-      loadingDone={() => <React.Fragment/>}
+      loadingDone={null}
       {...props}
       quietExecCommand={false}
       commandLine={
