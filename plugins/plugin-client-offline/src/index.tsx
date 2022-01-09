@@ -39,8 +39,9 @@ export default function renderMain(props: KuiProps) {
       {...props}
       commandLine={
         props.commandLine || [
-          'replay',
-          '/kui/playground'
+          'commentary',
+          '-f',
+          '/kui/playground.md'
         ]
       }
     >
