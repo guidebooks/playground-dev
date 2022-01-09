@@ -51,11 +51,8 @@
     "@kui-shell/plugin-carbon-themes": "10.8.0-dev-20220109-072638",
     "@kui-shell/plugin-client-common": "10.8.0-dev-20220109-072638",
     "@kui-shell/plugin-core-support": "10.8.0-dev-20220109-072638",
-    "@kui-shell/plugin-electron-components": "10.8.0-dev-20220109-072638",
     "@kui-shell/plugin-example": "file:./plugins/plugin-example",
-    "@kui-shell/plugin-git": "10.8.0-dev-20220109-072638",
     "@kui-shell/plugin-kubectl": "10.8.0-dev-20220109-072638",
-    "@kui-shell/plugin-patternfly4-themes": "10.8.0-dev-20220109-072638",
-    "@kui-shell/plugin-proxy-support": "10.8.0-dev-20220109-072638"
+    "@kui-shell/plugin-patternfly4-themes": "10.8.0-dev-20220109-072638"
   }
 }
