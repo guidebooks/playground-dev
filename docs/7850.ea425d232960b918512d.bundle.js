@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkKuiClientTemplate=self.webpackChunkKuiClientTemplate||[]).push([[7850,8247,4201],{17850:(e,l,t)=>{t.r(l)}}]);
